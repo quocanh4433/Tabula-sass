@@ -1,0 +1,66 @@
+/*------------------------------------------------------------
+form
+------------------------------------------------------------*/
+.form__group {
+    position: relative;
+    margin-bottom: 30px;
+    .form__input__icon,
+    .form__input__icon2 {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: color("pink");
+        font-size: 1.7rem;
+    }
+    .form__input__icon2{
+        top: 23px !important;
+    }
+    .form__input {
+        border-radius: 20px;
+        border: 0;
+        background: color("white");
+        padding: 15px 15px 15px 38px;
+        font-size: .75rem;
+        transition: all 0.3s;
+        border: 1px solid rgba(0,0,0,0.1);
+        width: 100%;
+        font-family: $Mont-fonts;
+        &::placeholder{
+            color: color("dark-106");
+        }
+        &:focus {
+            box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.1);
+            border: 1px solid color("dark");
+        }
+    }
+    select {
+        @extend .form__input;
+        color: color("dark-106");
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+        &:focus + .arrow-select{
+            transform: rotate(-180deg);
+            top: 35%;
+        }
+    }
+    .arrow-select {
+        position:absolute;
+        content: "";
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+        color: color("pink");
+        transition: all 0.3s;
+    }
+    textarea {
+        min-height: 100px;
+        max-height: 100px;
+        min-width: 100%;
+        max-width: 100%;
+        @extend .form__input;
+    }
+}
+

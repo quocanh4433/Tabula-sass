@@ -1,0 +1,21 @@
+/*------------------------------------------------------------
+list
+------------------------------------------------------------*/
+.social {
+    @include flexBox( center, flex-start);
+    li {
+        a{
+            padding-right: 10px;
+            color: color("dark");
+            transition: all 0.3 ease;
+            &:hover {
+                color: color("pink");
+            }
+        }
+    }
+    li:last-of-type{
+        a{
+            padding-right: 0;
+        }
+    }
+}
