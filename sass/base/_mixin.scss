@@ -31,3 +31,9 @@
 	justify-content: $justify;
 	flex-direction: $flex-dir;
 }
+
+@mixin position ($left: 0){
+	position: absolute;
+	content: "";
+	left: $left;
+}

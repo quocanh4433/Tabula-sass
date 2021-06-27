@@ -1,0 +1,15 @@
+Kiến thức chung cho layout
+
++ SASS:
+    - @extend
+    - @mixin
+    - @function
+    - has-map($map: <object> , $key: <value>) : kiểm tra giá trị trong object
+    - map-get($map: <object>, $key: <value>) : lấy giá trị trong object
+    - phân loại code sass
+
+
++ JS:
+    -
+    -
+    -
