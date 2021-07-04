@@ -134,9 +134,10 @@
             }
             nav {
                 @include flexBox( center, center, column);
+                margin-bottom: 20px;
                 a{
                     display: block;
-                    width: 100%;
+                    width: 100px;
                     padding: 15px 0;
 
                     text-align: center;
@@ -150,6 +151,12 @@
                         @include styleText($fsize-12, $fw-bolder);
                     }
                 }
+            }
+            .btn-primary-pink {
+                margin: 0 auto 20px auto;
+            }
+            .social{
+                justify-content: center;
             }
         }
         .subnav-active {

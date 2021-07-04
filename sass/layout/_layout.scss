@@ -6,6 +6,9 @@ body{
 	line-height: 1.5;
 	color: color("dark");
 }
+.body-unscroll {
+	overflow: hidden;
+} 
 //-------------------------------------------------------
 .container{
 	max-width: $baseWidth;

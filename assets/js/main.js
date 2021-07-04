@@ -6,9 +6,11 @@ function toggleMenu() {
     var menu = document.querySelector('.hamburger');
     var submenu = document.querySelector('.header__subnav');
     var logo = document.querySelector('.header__logo');
+    var body = document.querySelector('body');
     menu.classList.toggle('hamburger-active');
     submenu.classList.toggle('subnav-active');
-    logo.classList.toggle('logo-hidden');    
+    logo.classList.toggle('logo-hidden');   
+    body.classList.toggle('body-unscroll');   
 }
 
 /*

@@ -329,11 +329,12 @@ input, textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .header__wrapper .header__subnav nav a {
   display: block;
-  width: 100%;
+  width: 100px;
   padding: 15px 0;
   text-align: center;
   text-transform: capitalize;
@@ -346,6 +347,16 @@ input, textarea {
   margin-left: 5px;
   font-size: 1.2rem;
   font-weight: 900;
+}
+
+.header__wrapper .header__subnav .btn-primary-pink {
+  margin: 0 auto 20px auto;
+}
+
+.header__wrapper .header__subnav .social {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header__wrapper .subnav-active {
@@ -543,6 +554,10 @@ body {
   font-size: 1.4rem;
   line-height: 1.5;
   color: #191919;
+}
+
+.body-unscroll {
+  overflow: hidden;
 }
 
 .container {
